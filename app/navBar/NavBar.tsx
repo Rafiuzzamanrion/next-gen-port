@@ -1,5 +1,4 @@
 'use client'
-import './styles.css'
 import {useState, useEffect} from "react";
 import {useAnimate, stagger} from "framer-motion";
 import {MenuToggle} from "./MenuToggle";
@@ -19,14 +18,14 @@ function useMenuAnimation(isOpen: boolean) {
 				[
 					"li",
 					{transform: "scale(1)", opacity: 1, filter: "blur(0px)"},
-					{delay: stagger(0.05), at: "-0.1"}
+					{delay: stagger(0.07), at: "-0.1"}
 				]
 			]
 			: [
 				[
 					"li",
-					{transform: "scale(0.5)", opacity: 0, filter: "blur(10px)"},
-					{delay: stagger(0.05, {from: "last"}), at: "<"}
+					{transform: "scale(0.5)", opacity: 0, filter: "blur(15px)"},
+					{delay: stagger(0.07, {from: "last"}), at: "<"}
 				],
 				["nav", {transform: "translateX(-100%)"}, {at: "-0.1"}]
 			];

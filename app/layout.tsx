@@ -1,17 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import {Fjalla_One} from "next/font/google";
 import "./globals.css";
 import {ThemeProvider} from "@/components/theme-provider";
 import NavBar from "@/app/navBar/NavBar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const fjallaOne = Fjalla_One({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-fjalla-one",
 });
 
 export const metadata: Metadata = {
@@ -27,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${fjallaOne.className} ${fjallaOne.variable} antialiased`}
         suppressHydrationWarning={true}
       >
       <ThemeProvider
