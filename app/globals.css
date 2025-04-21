@@ -158,6 +158,10 @@
   padding-top: 100px;
   transform: translateX(-100%);
   will-change: transform;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+
 }
 
 .ul-style {
@@ -182,7 +186,7 @@
   margin: 0;
 }
 
-button {
+.theme-toggle-button {
   outline: none;
   border: none;
   -webkit-user-select: none;
