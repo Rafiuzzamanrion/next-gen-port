@@ -77,9 +77,9 @@
   --sidebar-ring: oklch(0.708 0 0);
   --text: #ebecf3;
   --clr: #0aff9d;
-/*  --bg-opaque: hsla(0,0%,7%,.25);*/
-/*  --bg-light: #232323;*/
-/*  --bg-dark: #080808;*/
+  --bg-opaque: hsla(0,0%,7%,.25);
+  --bg-light: #232323;
+  --bg-dark: #080808;
   --black: #000000;
   --ash-black: #222;
   --white: #fafafa;
