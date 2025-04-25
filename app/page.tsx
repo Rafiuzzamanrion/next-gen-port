@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ThreeJSParticlesCursor from "@/components/PirticalesCursor";
+
 
 export default function Home() {
   return (
@@ -18,7 +18,6 @@ export default function Home() {
       <p className="mt-4 text-lg">
         This is a sample Next.js application with Tailwind CSS.
       </p>
-      <ThreeJSParticlesCursor/>
     </div>
   );
 }
